@@ -1,29 +1,102 @@
+:root {
+    --blue: #03264C;
+    --cyan: #1259c3;
+    --green: #39b54a;
+    --yellow: #EAC926;
+    --grey-dark: #666;
+    --grey-light: #ebebeb;
+    --white: #FFF;
+    --black: #000;
 
-body{font-family:'Roboto', sans-serif;
-  margin: 0%;
-  padding: 0%;
+    --font-family: Roboto;
+
+    --font-size: 12px;
+    --font-size-title: 24px;
+    --font-size-price: 18px;
+    --font-size-subtitle: 16px;
+
+    --icon-size-lg: 2em;
+
+    --spacing: 15px;
+    --spacing-sm: 10px;
 }
 
+*{margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--grey-light);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+/*Header*/
 header{
-    background-color: #EAC926;
+    background-color: var(--yellow);
     
 }
 
-footer{
-    text-align: center;
+.header-phrase{
+    text-align:center;
 }
+
 
 .titulos{
-    font-size: 24px;
+    font-size: var(--font-size-title);
     text-align: center;
 }
 
-.precio {font-size: 18px;}
-.descuentos{font-size: 16px;
-    color: #39b54a
+.precio {font-size: var(--font-size-price);}
+
+.descuentos{font-size: var(--font-size-subtitle);
+    color: var(--green)
 }
 
-.burger-menu{
-   text-align: center;
+.Descripciones{
+    font-size: var(--font-size-subtitle);
 }
 
+.lista{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-burger{
+    color: var(--white);
+    text-align: center;
+}
+
+.menu-burger i{
+    background-color: var(--cyan);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+/*Fin header*/
+
+/*Footer*/
+footer{
+    text-align: center;
+    background-color: var(--white);
+}
+
+footer figure i{
+    color: var(--cyan);
+    font-size: var(--icon-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+/*Fin footer*/
