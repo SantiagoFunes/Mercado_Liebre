@@ -199,7 +199,32 @@ footer figure i{
     margin-bottom: var(--spacing-sm);
 }
 
+.create-form{
+    list-style: none;
+    padding: 20px 15px;
+}
 
+.control-formulario{
+    margin-bottom: 15px;
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.boton-formulario{
+    background-color: var(--green);
+    border: none;
+    font-size: 20px;
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
 @media (min-width: 768px){
 

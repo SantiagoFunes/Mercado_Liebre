@@ -17,7 +17,7 @@
            <img width="50%" src = "./images/logo-mercado-liebre.svg" alt = "Logo de la empresa" class="logo">
 
             <div class="search">
-                <input type="text" placeholder="Buscar productos, marcas  ">
+                <input type="text" name="buscador" placeholder="Buscar productos, marcas  ">
             </div>
 
             <div class="search-button">
@@ -76,7 +76,49 @@
         </div>
         
     </header>
+    <!--Formulario-->
+<form action="/crear-producto" method="post" class="create-form">
+    <div class="control-formulario">
+        <label> Nombre del producto:</label>
+        <input type="text" name="nombre" class="control">
+    </div>
     
+    <div class="control-formulario">
+        <label> Precio:</label>
+        <input type="text" name="precio" placeholder="123.56" class="control">
+    </div>
+
+    <div class="control-formulario">
+        <label>Categoria:</label>
+        <select name="categoria" class="control">
+            <option value="hogar">Hogar</option>
+            <option value="electro">Electro</option>
+            <option value="indumentaria">Indumentaria</option>
+        </select>
+    </div>
+
+    <div class="control-formulario">
+        <label>Ciudad:</label>
+        <select name="ciudad" class="control">
+            <option value="baires">Buenos Aires</option>
+            <option value="ros">Rosario</option>
+            <option value="mdz">Mendoza</option>
+        </select>
+    </div>
+
+    <div class="control-formulario">
+        <label>Descripcion:</label>
+        <textarea name="descripcion" class="control"></textarea>
+    </div>
+
+    <div class="control-formulario">
+        <label> Esta en oferta:</label>
+        <input type="radio" name="enOferta">
+    </div>
+
+    <button type="submit" class="boton-formulario">Borrar</button>
+    <button type="reset" class="boton-formulario">Guardar</button>
+
     <main>
     
 <br></br>
@@ -351,4 +393,8 @@
     </footer>
 
 </body>
+
+
+
+</form>
 </html>
