@@ -247,7 +247,7 @@ footer{
 }
 
 footer h3{
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-subtitle);
     color: var(--black);
 }
 
@@ -374,7 +374,8 @@ article:hover .Descripciones{
         width: 45;
     }
 
-    .precio.descuentos{
+    .precio, .descuentos{
         width: 50%;
     }
 }
+

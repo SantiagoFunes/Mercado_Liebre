@@ -1,5 +1,5 @@
 .login{
-    background-color: var(--yellow);
+    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -16,10 +16,24 @@
 
     
 }
-
+.caja-login{
+    background-color: var(--white);
+    border-radius: 10px;
+    border: solid 3px blue;
+    max-width: 50%;
+    min-height: 50%;
+    margin: 50px auto 50px;
+    background-color: #EAC926 ;
+    
+}
 .formulario-login{
-    border-radius: 3px;
-    border: solid 1px var(--grey-dark);
+    border-radius: 10px;
+    border: solid 2px blue;
+    text-align: center;
+    max-height: 50px;
+    max-width: 150px;
+    display: flex;
+position: relative;
 }
 
 .boton-login{
@@ -27,7 +41,7 @@
     color: var(--white);
     border-radius: 3px;
     font-size: 16px;
-    border: solid 1px var(--grey-dark);
+    border: solid 1px blue;
 }
 
 
@@ -37,3 +51,27 @@
     text-align: center;
     
 }
+
+
+
+@media (min-width: 768px){
+
+}
+
+
+
+
+@media (min-width: 361px){
+    
+
+.formulario-login{
+        border-radius: 10px;
+        border: solid 2px blue;
+        text-align: center;
+        max-height: 35px;
+        max-width: 150px;
+        display: flex;
+        position: relative;
+    
+}
+

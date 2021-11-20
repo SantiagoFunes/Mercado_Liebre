@@ -25,7 +25,6 @@ app.post('/register', (req,res)=>{
     res.sendFile(__dirname + '/');
     res.redirect("/")
 });
-
 app.post('/login', (req,res)=>{
     console.log(req.body);
     res.sendFile(__dirname + '/');
