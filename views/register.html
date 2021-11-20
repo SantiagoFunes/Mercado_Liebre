@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "/css/styles.css" rel = "stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu usuario</title>
+</head>
+
+<body>
+<div class="bodyusuario">
+    <form action="/register" method="post">
+
+        <div class="crear-usuario">
+        
+            <input type="text" name="nombre" class="usuario" placeholder="Nombre y Apellido" required minlength=4>
+        </div>
+        <br></br>
+        <div class="crear-usuario">
+        
+            <input type="text" name="usuario" class="usuario" placeholder="Nombre de usuario"required minlength=4>
+        </div>
+
+        <br></br>
+
+        <div class="crear-usuario">
+        
+            <input type="text" name="email" class="usuario" placeholder="E-mail"required>
+        </div>
+
+        <br></br>
+
+        <h4>Fecha de nacimiento</h4>
+
+        <br></br>
+
+        <div class="crear-usuario">
+        
+            <input type="date" name="fecha" class="date" required>
+        </div>
+
+        <br></br>  
+
+        <div class="crear-usuario">
+        
+            <input type="text" name="domicilio" class="usuario" placeholder="Domicilio"required>
+        </div>
+
+        <br></br>
+
+        <h4>Perfil del usuario</h4>
+
+        <br></br>
+
+        <div class="crear-usuario">
+
+            
+            <label><input type="radio" name="perfil" value="comprador" >Comprador</label>
+            <label><input type="radio" name="perfil" value="vendedor" >Vendedor</label>
+
+        </div>
+
+        <br></br>
+
+        <h4>Intereses</h4>
+
+        <br></br>
+
+        <div class="crear-usuario">
+        
+            <div class="interes">     
+                <label>
+                    <input type="checkbox" name="electro" value="Si" >Electro
+                </label>
+
+                <label> 
+                    <input type="checkbox" name="moda" value="No">Moda
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hogar" value="Si" >Hogar
+                </label>
+
+                <label> 
+                    <input type="checkbox" name="jugueteria" value="No">Jugueteria
+                </label>
+
+                <label> 
+                        <input type="checkbox" name="vidasana" value="No">Vida sana
+                </label>
+            </div>
+
+        </div>
+
+<br></br>
+
+        <div class="crear-usuario">
+            <label>Foto de perfil:</label>
+            <input type="file" name="avatar" accept=".jpg">
+        </div>
+
+<br></br>
+
+        <div class="crear-usuario">
+            <label>Contraseña</label>
+            <input type="password" name="password" required>
+
+        </div>
+
+        <div class="crear-usuario">
+            <label>Confirmar contraseña</label>
+            <input type="password" name="password" required>
+        </div>
+
+<br></br>
+
+        <button type="reset" class="boton-crear-usuario">Borrar</button>
+        <button type="submit"  class="boton-crear-usuario">Enviar</button>
+
+    </form>   
+</div>
+</body>
+</html>

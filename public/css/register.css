@@ -1,0 +1,19 @@
+.crear-usuario{
+    
+    padding: 5px 10px;
+    font-size: 16px;
+    
+}
+.bodyusuario {
+    background-color: var(--yellow);
+}
+.usuario{
+    border-radius: 3px;
+    border: solid 1px var(--grey-dark);
+}
+.boton-crear-usuario{
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 3px;
+    font-size: 16px;
+}
