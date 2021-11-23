@@ -1,1 +1,1 @@
-Inicializador: npm start.
+Inicializador: npm run start
